@@ -3,68 +3,86 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/responsive.css" />
     <title>About Me</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li>
-            <a href="../index.html"> Home </a>
-          </li>
-          <li>
-            <a href="./about.html"> About Me </a>
-          </li>
-          <li>
-            <a href="./contact.html"> Contact </a>
-          </li>
-        </ul>
-      </nav>
+    <header class="header">
+      <div class="container">
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="../index.html"> Home </a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link active" href="./pages/about.html">
+                About Me
+              </a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="./contact.html">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <main>
-      <h1>Про мене</h1>
-      <p>
-        Мене звати Кіян, я студент і зараз вивчаю основи веб-розробки. Мені
-        цікаво створювати власні сайти та дізнаватися, як працює інтернет.
-      </p>
+    <main class="about">
+      <div class="container">
+        <h1 class="about__title">Про мене</h1>
 
-      <p>
-        У вільний час я практикуюся писати код та читати статті про нові
-        технології. Я хочу стати хорошим розробником у майбутньому.
-      </p>
+        <div class="about__content">
+          <div class="about__text">
+            <p class="about__paragraph">
+              Мене звати Кіян, я студент і зараз вивчаю основи веб-розробки.
+            </p>
 
-      <p>
-        Зараз я вивчаю HTML, CSS та JavaScript.
-        <strong>HTML допомагає створювати структуру сторінки</strong>, а CSS
-        використовується для оформлення.
-      </p>
+            <p class="about__paragraph">
+              У вільний час я практикуюся писати код та читати статті.
+            </p>
 
-      <p>
-        Іноді навчання може бути складним, але
-        <em>мені подобається дізнаватися щось нове</em> і поступово покращувати
-        свої навички програмування.
-      </p>
+            <p class="about__paragraph">
+              Зараз я вивчаю HTML, CSS та JavaScript.
+              <strong class="about__strong"
+                >HTML допомагає створювати структуру</strong
+              >
+            </p>
 
-      <h2>Моє відео</h2>
-      <video controls width="400" height="300">
-        <source src="../assets/media/flowers.mp4" type="video/mp4" />
-        <source src="../assets/media/towers.mp4" type="video/mp4" />
-        <p>Ваш браузер не підтримує HTML-відео.</p>
-      </video>
+            <p class="about__paragraph">
+              <em class="about__emphasis"
+                >Мені подобається дізнаватися щось нове</em
+              >
+            </p>
+          </div>
 
-      <h2>Мій аудіотрек</h2>
-      <audio controls>
-        <source
-          src="../assets/media/kontraa-no-sleep-hiphop-music-473847.mp3"
-          type="audio/mp3"
-        />
-        <source
-          src="../assets/media/deltax-music-honey-kisses-413841.mp3"
-          type="audio/mp3"
-        />
-        <p>Ваш браузер не підтримує цей аудіофайл.</p>
-      </audio>
+          <div class="about__media">
+            <div class="about__card">
+              <h2 class="about__subtitle">Моє відео</h2>
+              <video class="about__video" controls>
+                <source src="../assets/media/flowers.mp4" type="video/mp4" />
+              </video>
+              <p class="about__caption">Моє навчальне відео</p>
+            </div>
+
+            <div class="about__card">
+              <h2 class="about__subtitle">Мій аудіотрек</h2>
+              <audio class="about__audio" controls>
+                <source
+                  src="../assets/media/kontraa-no-sleep-hiphop-music-473847.mp3"
+                  type="audio/mp3"
+                />
+              </audio>
+              <p class="about__caption">Музика для концентрації</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
-    <footer>&copy; 2026 Джаваншірі Кіян</footer>
+    <footer class="footer">
+      <div class="container">&copy; 2026 Джаваншірі Кіян</div>
+    </footer>
   </body>
 </html>

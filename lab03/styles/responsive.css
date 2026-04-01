@@ -1,0 +1,257 @@
+@media (max-width: 1024px) {
+  .container {
+    max-width: 940px;
+    padding-inline: 32px;
+  }
+
+  .header {
+    .header__nav-list {
+      gap: 0 24px;
+    }
+
+    .header__nav-link {
+      font-size: 15px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 580px;
+    padding-inline: 16px;
+  }
+
+  .header {
+    .header__nav-list {
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .header__nav-item {
+      width: 100%;
+      text-align: center;
+    }
+
+    .header__nav-link {
+      font-size: 14px;
+    }
+  }
+
+  .footer {
+    font-size: 13px;
+    text-align: center;
+    padding-block: 12px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .home {
+    .home__title {
+      font-size: 32px;
+    }
+
+    .home__subtitle {
+      font-size: 22px;
+    }
+
+    .home__content {
+      gap: 16px;
+    }
+
+    .home__content-card {
+      padding: 16px;
+    }
+
+    .home__figure {
+      max-width: 260px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .home {
+    margin-block: 16px;
+
+    .home__title {
+      font-size: 28px;
+    }
+
+    .home__subtitle {
+      font-size: 20px;
+    }
+
+    .home__text {
+      font-size: 14px;
+    }
+
+    .home__btn {
+      width: 100%;
+      text-align: center;
+    }
+
+    .home__content {
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .home__content-card {
+      width: 100%;
+      padding: 16px;
+    }
+
+    .home__figure {
+      max-width: 100%;
+    }
+
+    .home__table {
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .about {
+    .about__title {
+      font-size: 28px;
+    }
+
+    .about__subtitle {
+      font-size: 18px;
+    }
+
+    .about__content {
+      gap: 16px;
+    }
+
+    .about__text {
+      padding: 16px;
+    }
+
+    .about__card {
+      padding: 14px;
+    }
+
+    .about__video {
+      max-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    margin-block: 16px;
+
+    .about__title {
+      font-size: 24px;
+    }
+
+    .about__subtitle {
+      font-size: 18px;
+    }
+
+    .about__paragraph {
+      font-size: 14px;
+    }
+
+    .about__content {
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .about__text {
+      padding: 16px;
+    }
+
+    .about__media {
+      gap: 16px;
+    }
+
+    .about__card {
+      padding: 14px;
+    }
+
+    .about__video {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .about__audio {
+      width: 100%;
+    }
+
+    .about__caption {
+      font-size: 13px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .contact {
+    .contact__form {
+      max-width: 700px;
+      padding: 20px;
+    }
+
+    .contact__title {
+      font-size: 22px;
+    }
+
+    .contact__fieldset {
+      margin-bottom: 14px;
+    }
+
+    .contact__input,
+    .contact__select,
+    .contact__textarea {
+      padding: 10px 12px;
+    }
+
+    .contact__actions {
+      gap: 10px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .contact {
+    margin-block: 16px;
+
+    .contact__form {
+      max-width: 100%;
+      padding: 16px;
+    }
+
+    .contact__title {
+      font-size: 20px;
+    }
+
+    .contact__label {
+      font-size: 13px;
+    }
+
+    .contact__input,
+    .contact__select,
+    .contact__textarea {
+      font-size: 13px;
+      padding: 10px;
+    }
+
+    .contact__radio-label,
+    .contact__checkbox-label {
+      font-size: 13px;
+    }
+
+    .contact__actions {
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .contact__button {
+      width: 100%;
+      text-align: center;
+      padding: 12px;
+    }
+  }
+}

@@ -3,107 +3,145 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/responsive.css" />
     <title>Contact</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li>
-            <a href="../index.html"> Home </a>
-          </li>
-          <li>
-            <a href="./about.html"> About Me </a>
-          </li>
-          <li>
-            <a href="./contact.html"> Contact </a>
-          </li>
-        </ul>
-      </nav>
+    <header class="header">
+      <div class="container">
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="../index.html"> Home </a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="./about.html"> About Me </a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link active" href="./contact.html">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <main>
-      <form action="./contact.html" method="GET">
-        <h2>Зв’яжіться зі мною</h2>
+    <div class="container">
+      <main class="contact">
+        <form class="contact__form" action="./contact.html" method="GET">
+          <h2 class="contact__title">Зв’яжіться зі мною</h2>
 
-        <fieldset>
-          <label for="name">Ім’я *:</label>
-          <input
-            placeholder="Ваше ім’я"
-            id="name"
-            name="name"
-            type="text"
-            required
-            minlength="2"
-            maxlength="30"
-          />
-        </fieldset>
+          <fieldset class="contact__fieldset">
+            <label class="contact__label" for="name">Ім’я *:</label>
+            <input
+              class="contact__input"
+              placeholder="Ваше ім’я"
+              id="name"
+              name="name"
+              type="text"
+              required
+              minlength="2"
+              maxlength="30"
+            />
+          </fieldset>
 
-        <fieldset>
-          <label for="email">Email *:</label>
-          <input
-            placeholder="Ваша почта"
-            id="email"
-            name="email"
-            type="email"
-            required
-          />
-        </fieldset>
+          <fieldset class="contact__fieldset">
+            <label class="contact__label" for="email">Email *:</label>
+            <input
+              class="contact__input"
+              placeholder="Ваша почта"
+              id="email"
+              name="email"
+              type="email"
+              required
+            />
+          </fieldset>
 
-        <fieldset>
-          <label for="tel">Phone Number:</label>
-          <input
-            placeholder="Ваш номер телефона"
-            id="tel"
-            name="tel"
-            type="tel"
-            maxlength="16"
-          />
-        </fieldset>
+          <fieldset class="contact__fieldset">
+            <label class="contact__label" for="tel">Phone Number:</label>
+            <input
+              class="contact__input"
+              placeholder="Ваш номер телефона"
+              id="tel"
+              name="tel"
+              type="tel"
+              maxlength="16"
+            />
+          </fieldset>
 
-        <fieldset>
-          <label for="topic">Тема:</label>
-          <select id="topic" name="topic">
-            <option selected value="study">Навчання</option>
-            <option value="work">Співпраця</option>
-            <option value="other">Інше</option>
-          </select>
-        </fieldset>
+          <fieldset class="contact__fieldset">
+            <label class="contact__label" for="topic">Тема:</label>
+            <select class="contact__select" id="topic" name="topic">
+              <option selected value="study">Навчання</option>
+              <option value="work">Співпраця</option>
+              <option value="other">Інше</option>
+            </select>
+          </fieldset>
 
-        <fieldset>
-          <label>Спосіб зв'язку</label>
-          <label
-            ><input type="radio" name="contactWay" value="email" checked />
-            Email</label
-          >
-          <label
-            ><input type="radio" name="contactWay" value="phone" />
-            Телефон</label
-          >
-        </fieldset>
+          <fieldset class="contact__fieldset">
+            <span class="contact__label">Спосіб зв'язку</span>
 
-        <fieldset>
-          <label for="message">Повідомлення:</label><br />
-          <textarea
-            style="resize: none"
-            placeholder="Введіть ваше повідомлення"
-            id="message"
-            name="message"
-            rows="5"
-            cols="30"
-          ></textarea>
-        </fieldset>
+            <label class="contact__radio-label">
+              <input
+                class="contact__radio"
+                type="radio"
+                name="contactWay"
+                value="email"
+                checked
+              />
+              Email
+            </label>
 
-        <fieldset>
-          <label>
-            <input type="checkbox" name="agree" required />
-            Погоджуюсь з правилами
-          </label>
-        </fieldset>
+            <label class="contact__radio-label">
+              <input
+                class="contact__radio"
+                type="radio"
+                name="contactWay"
+                value="phone"
+              />
+              Телефон
+            </label>
+          </fieldset>
 
-        <button type="submit">Надіслати</button>
-        <button type="reset">Очіщити</button>
-      </form>
-    </main>
-    <footer>&copy; 2026 Джаваншірі Кіян</footer>
+          <fieldset class="contact__fieldset">
+            <label class="contact__label" for="message">Повідомлення:</label>
+            <textarea
+              class="contact__textarea"
+              placeholder="Введіть ваше повідомлення"
+              id="message"
+              name="message"
+              rows="5"
+            ></textarea>
+          </fieldset>
+
+          <fieldset class="contact__fieldset">
+            <label class="contact__checkbox-label">
+              <input
+                class="contact__checkbox"
+                type="checkbox"
+                name="agree"
+                required
+              />
+              Погоджуюсь з правилами
+            </label>
+          </fieldset>
+
+          <div class="contact__actions">
+            <button class="contact__button" type="submit">Надіслати</button>
+            <button
+              class="contact__button contact__button--secondary"
+              type="reset"
+            >
+              Очистити
+            </button>
+          </div>
+        </form>
+      </main>
+    </div>
+    <footer class="footer">
+      <div class="container">&copy; 2026 Джаваншірі Кіян</div>
+    </footer>
   </body>
 </html>
