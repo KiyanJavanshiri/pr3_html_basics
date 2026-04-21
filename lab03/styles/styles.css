@@ -21,10 +21,149 @@ body {
   background-color: var(--color-bg);
 }
 
+.theme-dark {
+  background-color: #5e5e5e;
+}
+
+.accordion {
+  margin-top: 24px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.accordion__btn {
+  width: 100%;
+  padding: 14px 16px;
+
+  background: #f9fafb;
+  border: none;
+  cursor: pointer;
+
+  font-size: 16px;
+  font-weight: 500;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  transition: background 0.2s;
+}
+
+.accordion__btn:hover {
+  background: #f3f4f6;
+}
+
+.accordion__btn::after {
+  content: "▾";
+  font-size: 14px;
+  transition: transform 0.3s ease;
+}
+
+.accordion.is-open .accordion__btn::after {
+  transform: rotate(180deg);
+}
+
+.accordion__summary {
+  padding: 14px 16px;
+  font-size: 14px;
+  color: #4b5563;
+
+  border-top: 1px solid #e5e7eb;
+
+  animation: fadeIn 0.2s ease;
+}
+
+.btn-top {
+  position: fixed;
+  bottom: 100px;
+  right: 64px;
+  padding: 12px 16px;
+  border-radius: 999px;
+  background-color: #000000;
+  color: #ffffff;
+  cursor: pointer;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding-inline: 64px;
+}
+
+.theme-toggle {
+  position: absolute;
+  right: 32px;
+  top: 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  z-index: 1001;
+}
+
+.burger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  z-index: 1001;
+}
+
+.burger svg {
+  width: 28px;
+  height: 28px;
+}
+
+.burger-nav {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 220px;
+  height: 100vh;
+
+  background: #222;
+  color: white;
+
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+
+  z-index: 1000;
+  padding-top: 80px;
+}
+
+.burger-nav.is-open {
+  transform: translateX(0);
+}
+
+.burger-nav__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.burger-nav__list-item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.burger-nav__list-link {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.burger-nav__list-link:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.burger-nav__list-link.is-active {
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .header {

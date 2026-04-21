@@ -21,8 +21,17 @@
     padding-inline: 16px;
   }
 
+  .burger {
+    display: block;
+  }
+
+  .burger-nav {
+    display: block;
+  }
+
   .header {
     .header__nav-list {
+      display: none;
       flex-direction: column;
       gap: 10px;
     }

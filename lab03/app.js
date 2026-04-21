@@ -1,6 +1,6 @@
 "use strict";
 
-const btn = document.querySelector("button");
+const btn = document.querySelector(".home__btn");
 
 btn.addEventListener("click", (e) => {
   const previousText = btn.textContent;
