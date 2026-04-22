@@ -149,6 +149,12 @@
         </div>
 
         <h2 class="home__subtitle">Мій розклад навчання</h2>
+        <input
+          type="text"
+          placeholder="Пошук (день, час, заняття)"
+          class="home__search"
+          data-table-search
+        />
         <table class="home__table">
           <caption>
             Розклад занять
@@ -179,7 +185,9 @@
           </tbody>
         </table>
         <div data-acc class="accordion">
-          <button data-acc-btn class="accordion__btn">Вчити фронтенд складно?</button>
+          <button data-acc-btn class="accordion__btn">
+            Вчити фронтенд складно?
+          </button>
           <div data-acc-content hidden class="accordion__summary">Ні</div>
         </div>
       </div>
@@ -190,5 +198,13 @@
         &copy; <span data-footer></span> Джаваншірі Кіян
       </div>
     </footer>
+    <!-- figure modal -->
+    <div class="modal" data-modal hidden>
+      <div class="modal__content">
+        <button class="modal__close" data-modal-close>×</button>
+        <img class="modal__img" src="" alt="" />
+        <p class="modal__caption"></p>
+      </div>
+    </div>
   </body>
 </html>
