@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/responsive.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catalog</title>
+    <script src="../js/catalog.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="page__title">Каталог послуг</h1>
+
+      <div class="controls">
+        <input
+          type="text"
+          placeholder="Пошук..."
+          class="controls__search"
+          data-search
+        />
+
+        <select class="controls__select" data-category>
+          <option value="all">Всі категорії</option>
+          <option value="IT">IT</option>
+          <option value="Design">Design</option>
+          <option value="Marketing">Marketing</option>
+          <option value="Media">Media</option>
+          <option value="Language">Language</option>
+        </select>
+
+        <select class="controls__select" data-sort>
+          <option value="default">Без сортування</option>
+          <option value="price-asc">Ціна ↑</option>
+          <option value="price-desc">Ціна ↓</option>
+          <option value="rating">Рейтинг</option>
+          <option value="title">Назва</option>
+        </select>
+      </div>
+
+      <div data-loading class="state state--loading">Завантаження...</div>
+
+      <div data-error class="state state--error">Помилка завантаження</div>
+
+      <div data-catalog class="catalog"></div>
+
+      <div data-empty class="state state--empty">Нічого не знайдено</div>
+
+      <div class="load-more">
+        <button class="load-more__btn" data-load-more>Показати ще</button>
+      </div>
+    </div>
+
+    <div class="catalog__modal catalog__modal--hidden" data-modal>
+      <div class="catalog__modal-overlay" data-modal-close></div>
+
+      <div class="catalog__modal-window">
+        <button class="catalog__modal-close" data-modal-close>✖</button>
+
+        <img class="catalog__modal-image" data-modal-image />
+
+        <h2 class="catalog__modal-title" data-modal-title></h2>
+
+        <p class="catalog__modal-category" data-modal-category></p>
+
+        <p class="catalog__modal-description" data-modal-description></p>
+
+        <div class="catalog__modal-footer">
+          <span class="catalog__modal-price" data-modal-price></span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
